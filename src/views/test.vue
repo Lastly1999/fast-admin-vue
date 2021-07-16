@@ -1,12 +1,10 @@
 <template>
   <div>
-    test
+    <a-button @click="testRequest" type="primary">test</a-button>
   </div>
 </template>
-<script lang="ts">
-import { defineComponent } from 'vue';
-
-export default defineComponent({
-  setup() {},
-});
+<script lang="ts" setup>
+const testRequest = () => {
+    console.log('test')
+}
 </script>
